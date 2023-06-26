@@ -11,7 +11,7 @@ Click on "Load unpacked extension" and navigate to the directory which houses th
 Design decisions:
 - If a user is visiting multiple tabs and wants to use the same API keys it would be time effective to save these keys thus I used local storage so that a user does not have to re-enter the information every time they open the popup. That being said, this is not the most secure method. However, since this Chrome extension is not being published and instead requires developer mode, it is an acceptable risk. A tech-savvy enough user who builds this repo and locally loads it into Google Chrome should also be savvy enough to clear API keys from their local storage (NOTE: if you decide to clone this repo and publish it, clean up that code...)
 
-- I decided to POST to mem.ai's endpoint instead of using ` @mem-labs/mem-node`. This was because I wanted to evaluate the response code of the POST to display a success/error message.
+- I decided to POST to mem.ai's endpoint instead of using ` @mem-labs/mem-node`. This was because I wanted to evaluate the response code of the POST to display a success/error message. Similarly, I am also POSTing to OpenAI's endpoint instead of using `openai` which should be used on the server vs. client; using it on the client results in the code trying to set an "unsafe header 'User-Agent'".
 
 Challenges encountered and how they were addressed:
 - How to feed information from the webpage to the popup; I learned about message passing between Chrome extensions and the actual webpage being visited.
