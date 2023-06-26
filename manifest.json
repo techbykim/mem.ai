@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Save Website to Mem",
+    "version": "1.0",
+    "description": "Extract a website's url, title, and allow users to save additional data such as notes and tags to a new mem. The user is required to enter their API key for mem.ai; OpenAI API key is optional.",
+    "permissions": ["activeTab", "storage", "tabs"],
+    "browser_action": {
+        "default_popup": "src/index.html",
+        "default_title": "Save Website to Mem"
+    },
+    "icons": {
+      "128": "mem-logo.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      "src/popup.js"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
