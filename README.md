@@ -19,3 +19,9 @@ Challenges encountered and how they were addressed:
 
 Future improvements:
 - Currently, there is no feedback to the user when the requests to OpenAI and Mem are in progress. I would add a loading spinner to indicate that their request is in flight.
+
+# Screenshots
+- <img width="351" alt="popup" src="https://github.com/kmgehrma/mem.ai/assets/57041732/6b73b5be-4c69-447b-a379-66633d7d2c72">
+- <img width="328" alt="success-message" src="https://github.com/kmgehrma/mem.ai/assets/57041732/6388b206-3b99-478f-a3eb-232f0da9590b">
+- <img width="329" alt="error-message" src="https://github.com/kmgehrma/mem.ai/assets/57041732/9392dd21-2e11-4648-8a03-f2fb93f2f429">
+- <img width="679" alt="example-created-mem-with-summary" src="https://github.com/kmgehrma/mem.ai/assets/57041732/3e5593cf-8ea0-4b94-81a1-4b8985936dbe">
